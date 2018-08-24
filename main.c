@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-unsigned long int t, y, z, counter = 0;
-unsigned long int a, b, x, n, c, d, m;
+unsigned long long t, y, z, counter = 0;
+unsigned long long a, b, x, n, c, d, m;
 
 int main(void) {
-  scanf("%lu", &t);
-  for(unsigned long int i = 0; i < t; i++){
-    scanf("%lu %lu %lu %lu %lu %lu %lu", &a, &b, &x, &n, &c, &d, &m);
+  scanf("%llu", &t);
+  for(unsigned long long i = 0; i < t; i++){
+    scanf("%llu %llu %llu %llu %llu %llu %llu", &a, &b, &x, &n, &c, &d, &m);
     z = a*x+b;
     if(a==0 && b==0 && c==0){
       counter = n + 1;
@@ -17,7 +17,7 @@ int main(void) {
     } else if(z>=c && z<=d && m>=d && m>z && m>n && n<d){
         counter = d-c;
     }else{
-      for(unsigned long int j = 0; j <= n; j++){
+      for(unsigned long long j = 0; j <= n; j++){
         z = x + j;
         y = (a*z + b) % m;
         if(y >= c && y <= d){
@@ -25,7 +25,7 @@ int main(void) {
         }
       }
     }
-    printf("%lu\n", counter);
+    printf("%llu\n", counter);
     counter = 0;
   }
   return 0;
