@@ -10,12 +10,8 @@ int main(void) {
     z = a*x+b;
     if(a==0 && b==0 && c==0){
       counter = n + 1;
-    }else if(m==1 && m>=c && m<=d){
-     counter = n + 1;
     }else if(z>=c && z<=d && m>=d && m>z && m>n && n>=d){
         counter = d-c+1;
-    } else if(z>=c && z<=d && m>=d && m>z && m>n && n<d){
-        counter = d-c;
     }else{
       for(unsigned long long j = 0; j <= n; j++){
         z = x + j;
