@@ -1,6 +1,6 @@
 /*
  * Hash problem sample solution, optimization of the code done by Otacilio Maia
- *  Tiago Valenca (Done just for fun, not for Evaluation)
+ *  Tiago Lopes Valença
  */
  #include <stdio.h>
 
